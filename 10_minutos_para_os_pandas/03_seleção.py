@@ -36,3 +36,27 @@ print(df1.loc['20130102':, ['A', 'B']], '\n')
 # Redução nas dimensões do objeto devolvido:
 print(df1.loc['20130102', 'A'], '\n')
 
+
+# Seleção por posição
+
+# Selecione por meio da posição dos inteiros passados:
+print(df1.iloc[3], '\n')
+
+# Por fatias inteiras, agindo de forma semelhante a numpy / Python:
+print(df1.iloc[1:5, 0:2], '\n')
+
+# Por listas de localizações de posições inteiras, semelhantes ao estilo NumPy / Python:
+print(df1.iloc[[1, 2, 4], [0, 2]], '\n')
+
+# Para fatiar linhas explicitamente:
+print(df1.iloc[1:3, :], '\n')
+
+# Para fatiar colunas explicitamente:
+print(df1.iloc[:, 1:3], '\n')
+
+# Para obter um valor explicitamente:
+print(df1.iloc[1, 1], '\n')
+
+# Para obter acesso rápido a um escalar (equivalente ao método anterior):
+print(df1.iat[1, 1], '\n')
+
