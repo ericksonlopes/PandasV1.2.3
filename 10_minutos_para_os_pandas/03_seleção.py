@@ -60,3 +60,4 @@ print(df1.iloc[1, 1], '\n')
 # Para obter acesso rápido a um escalar (equivalente ao método anterior):
 print(df1.iat[1, 1], '\n')
 
+# Indexação booleana
