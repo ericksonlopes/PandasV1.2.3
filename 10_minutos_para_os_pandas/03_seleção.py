@@ -61,3 +61,5 @@ print(df1.iloc[1, 1], '\n')
 print(df1.iat[1, 1], '\n')
 
 # Indexação booleana
+print(df1[df1['A'] > 1], '\n')
+
