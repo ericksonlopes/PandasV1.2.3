@@ -32,5 +32,5 @@ print(df.sort_index(axis=0, ascending=False), '\n')
 print(df.sort_index(axis=1, ascending=False), '\n')
 
 # Classificando por valores:
-print('\n')
-print('\n')
+print(df.sort_values(by="b"), '\n')
+
