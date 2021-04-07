@@ -17,3 +17,6 @@ print(serie2, '\n')
 serie3 = pd.Series(data=d, index=['x', 'y', 'z'])
 print(serie3, '\n')
 
+# O índice (rótulos dos eixos) da Série.
+print(serie3.index)
+
