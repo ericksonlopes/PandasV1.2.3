@@ -65,3 +65,43 @@ print(df1.iat[1, 1], '\n')
 # Usando os valores de uma única coluna para selecionar dados.
 print(df1[df1['A'] > 1], '\n')
 
+# Seleção de valores de um DataFrame onde uma condição booleana é atendida.
+print(df1[df1 > 0])
+
+
+# Usando o isin()método de filtragem:
+df2 = df1.copy()
+
+df2['E'] = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis']
+
+print(df2, '\n')
+
+print(df2[df2["E"].isin(['dois', 'quatro'])], '\n')
+
+# Ambiente
+
+# Definir uma nova coluna alinha automaticamente os dados pelos índices.
+s1 = pd.Series([1, 2, 3, 4, 5, 6], index=pd.date_range("20130102", periods=6))
+
+print(s1, '\n')
+
+df2['F'] = s1
+
+print(df2, '\n')
+
+# Definindo valores por rótulo:
+df2.at[dates[0], 'A'] = 0
+
+print(df2, '\n')
+
+# Definindo valores por posição:
+
+df2.iat[0, 1] = 0
+
+print(df2, '\n')
+
+# Configurando atribuindo com uma matriz NumPy:
+df2.loc[:, 'D'] = np.array([5] * len(df2))
+
+print(df2, '\n')
+
