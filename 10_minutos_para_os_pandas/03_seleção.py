@@ -105,3 +105,6 @@ df2.loc[:, 'D'] = np.array([5] * len(df2))
 
 print(df2, '\n')
 
+print(df2.index)
+df2.to_csv('df2.csv', sep=',')
+
